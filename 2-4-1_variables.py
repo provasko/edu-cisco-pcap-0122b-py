@@ -51,3 +51,13 @@ adam = 9
 total_apples = john + mary + adam
 print(john, mary, adam, sep=",")
 print("Total: " + str(total_apples))
+
+# Shortcut operators
+x = 2
+x = x * 2
+sheep = 0
+sheep = sheep + 1
+
+x *= 2
+sheep += 1
+
