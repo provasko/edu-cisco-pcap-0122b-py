@@ -103,4 +103,7 @@ to variables, e.g., var += 1, or var /= 5 * 2. (2.1.4.8)
 
 5. You can assign new values to already existing variables using the assignment operator or one 
 of the compound operators, e.g.: (2.1.4.5)
+
+You can combine text and variables using the + operator, and use the print() function to output 
+strings and variables
 '''
