@@ -226,3 +226,58 @@ for i in range(2, 1):
     print(i)
 else:
     print("else:", i)
+
+
+'''
+1. There are two types of loops in Python: while and for:
+
+the while loop executes a statement or a set of statements as long as a specified boolean 
+condition is true, e.g.:
+'''
+# Example 1
+while True:
+    print("Stuck in an infinite loop.")
+
+# Example 2
+counter = 5
+while counter > 2:
+    print(counter)
+    counter -= 1
+'''
+the for loop executes a set of statements many times; it's used to iterate over a sequence 
+(e.g., a list, a dictionary, a tuple, or a set - you will learn about them soon) or other 
+objects that are iterable (e.g., strings). You can use the for loop to iterate over a sequence 
+of numbers using the built-in range function. Look at the examples below:
+
+'''
+# Example 1
+word = "Python"
+for letter in word:
+    print(letter, end="*")
+
+# Example 2
+for i in range(1, 10):
+    if i % 2 == 0:
+        print(i)
+
+
+'''
+2. You can use the break and continue statements to change the flow of a loop:
+
+You use break to exit a loop, e.g.:
+'''
+text = "OpenEDG Python Institute"
+for letter in text:
+    if letter == "P":
+        break
+    print(letter, end="")
+
+'''
+You use continue to skip the current iteration, and continue with the next iteration, e.g.:
+'''
+text = "pyxpyxpyx"
+for letter in text:
+    if letter == "x":
+        continue
+    print(letter, end="")
+
