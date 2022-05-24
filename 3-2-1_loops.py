@@ -364,3 +364,8 @@ for num in n:
     print(num - 1)
 else:
     print(num)
+
+# What is the output of the following code?
+
+for i in range(0, 6, 3):
+    print(i)
