@@ -328,3 +328,22 @@ while x < 11:
         print(x)
     x += 1
 
+# Create a program with a for loop and a break statement. The program should iterate over characters 
+# in an email address, exit the loop when it reaches the @ symbol, and print the part before @ on 
+# one line
+
+for ch in "john.smith@pythoninstitute.org":
+    if ch == "@":
+        break
+    print(ch, end="")
+
+# Create a program with a for loop and a continue statement. The program should iterate over a string 
+# of digits, replace each 0 with x, and print the modified string to the screen.
+
+for digit in "0165031806510":
+    if digit == "0":
+        print("x", end="")
+        continue
+    print(digit, end="")
+
+
