@@ -20,5 +20,7 @@ They're called logical operators.
 '''
 
 '''
-One logical conjunction operator in Python is the word and. It's a binary operator with a priority that is lower than the one expressed by the comparison operators. It allows us to code complex conditions without the use of parentheses like this one:
+One logical conjunction operator in Python is the word and. 
+It's a binary operator with a priority that is lower than the one expressed by the comparison operators. 
+It allows us to code complex conditions without the use of parentheses like this one:
 '''
