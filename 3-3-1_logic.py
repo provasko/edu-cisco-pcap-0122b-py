@@ -7,7 +7,7 @@ is called a conjunction. And now another example:
 If you are in the mall or I am in the mall, one of us will buy a gift for Mom.
 '''
 
-counter > 0 and value == 100
+# counter > 0 and value == 100
 
 
 '''
@@ -40,4 +40,14 @@ This operator is written as the word not, and its priority is very high:
 the same as the unary + and -.
 '''
 
+
+var = 1
+# Example 1:
+print(var > 0)
+print(not (var <= 0))
+
+
+# Example 2:
+print(var != 0)
+print(not (var == 0))
 
