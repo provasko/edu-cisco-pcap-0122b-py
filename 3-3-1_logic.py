@@ -40,7 +40,11 @@ This operator is written as the word not, and its priority is very high:
 the same as the unary + and -.
 '''
 
-
+# Logical expressions
+'''
+Let's create a variable named var and assign 1 to it.
+The following conditions are pairwise equivalent:
+'''
 var = 1
 # Example 1:
 print(var > 0)
@@ -59,4 +63,19 @@ The negation of a disjunction is the conjunction of the negations.
 
 # not (p and q) == (not p) or (not q)
 # not (p or q) == (not p) and (not q)
+
+# Logical values vs. single bits
+
+'''
+Logical operators take their arguments as a whole regardless of how many bits they contain. 
+The operators are aware only of the value: zero (when all the bits are reset) means False; 
+not zero (when at least one bit is set) means True.
+
+The result of their operations is one of these values: False or True. 
+This means that this snippet will assign the value True to the j variable if i is not zero; 
+otherwise, it will be False.
+'''
+
+i = 1
+j = not not i
 
