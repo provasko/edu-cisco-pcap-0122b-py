@@ -97,3 +97,10 @@ This is the xor (as in exclusive or) operator, and is denoted as ^ (caret).
 ~ (tilde) - bitwise negation;
 ^ (caret) - bitwise exclusive or (xor).
 '''
+print("*" * 10)
+a = False
+b = True
+print(a & b)
+print(a | b)
+print(~ a)
+print(a ^ b)
