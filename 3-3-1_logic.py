@@ -79,3 +79,21 @@ otherwise, it will be False.
 i = 1
 j = not not i
 
+
+# Bitwise operators
+'''
+However, there are four operators that allow you to manipulate single bits of data. 
+They are called bitwise operators.
+
+They cover all the operations we mentioned before in the logical context, and one additional operator. 
+This is the xor (as in exclusive or) operator, and is denoted as ^ (caret).
+'''
+
+# Bitwise operations (&, |, and ^)
+
+'''
+& (ampersand) - bitwise conjunction;
+| (bar) - bitwise disjunction;
+~ (tilde) - bitwise negation;
+^ (caret) - bitwise exclusive or (xor).
+'''
