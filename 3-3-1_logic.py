@@ -104,3 +104,24 @@ print(a & b)
 print(a | b)
 print(~ a)
 print(a ^ b)
+
+# Logical vs. bit operations: continued
+
+'''
+i: 00000000000000000000000000001111
+j: 00000000000000000000000000010110
+'''
+# bit = i & j	00000000000000000000000000000110
+
+'''
+i	00000000000000000000000000001111
+bitneg = ~i	11111111111111111111111111110000
+'''
+
+'''
+Each of these two-argument operators can be used in abbreviated form. These are the examples of their equivalent notations:
+
+x = x & y	x &= y
+x = x | y	x |= y
+x = x ^ y	x ^= y
+'''
