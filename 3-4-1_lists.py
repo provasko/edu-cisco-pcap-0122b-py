@@ -149,3 +149,89 @@ print(my_list)
 
 # Making use of lists
 
+'''
+the list is assigned a sequence of five integer values;
+the i variable takes the values 0, 1, 2, 3, and 4, and then it indexes the list, 
+selecting the subsequent elements: the first, second, third, fourth and fifth;
+each of these elements is added together by the += operator to the total variable, 
+giving the final result at the end of the loop;
+note the way in which the len() function has been employed - it makes the code 
+independent of any possible changes in the list's content.
+'''
+
+# The second face of the for loop
+
+my_list = [10, 1, 8, 3, 5]
+total = 0
+
+for i in my_list:
+    total += i
+
+print(total)
+
+'''
+the for instruction specifies the variable used to browse the list (i here) followed 
+by the in keyword and the name of the list being processed (my_list here)
+the i variable is assigned the values of all the subsequent list's elements, 
+and the process occurs as many times as there are elements in the list;
+this means that you use the i variable as a copy of the elements' values, 
+and you don't need to use indices;
+the len() function is not needed here, either.
+'''
+
+# Lists in action
+
+variable_1 = 1
+variable_2 = 2
+
+variable_2 = variable_1
+variable_1 = variable_2
+
+'''
+If you do something like this, you would lose the value previously stored in variable_2. 
+Changing the order of the assignments will not help. You need a third variable that serves 
+as an auxiliary storage.
+'''
+
+variable_1 = 1
+variable_2 = 2
+
+auxiliary = variable_1
+variable_1 = variable_2
+variable_2 = auxiliary
+
+# Python offers a more convenient way of doing the swap - take a look:
+
+variable_1 = 1
+variable_2 = 2
+
+variable_1, variable_2 = variable_2, variable_1
+
+# Now you can easily swap the list's elements to reverse their order:
+
+my_list = [10, 1, 8, 3, 5]
+
+my_list[0], my_list[4] = my_list[4], my_list[0]
+my_list[1], my_list[3] = my_list[3], my_list[1]
+
+print(my_list)
+
+my_list = [10, 1, 8, 3, 5]
+length = len(my_list)
+
+for i in range(length // 2):
+    my_list[i], my_list[length - i - 1] = my_list[length - i - 1], my_list[i]
+
+print(my_list)
+
+
+'''
+we've assigned the length variable with the current list's length (this makes our code 
+a bit clearer and shorter)
+we've launched the for loop to run through its body length // 2 times (this works well 
+for lists with both even and odd lengths, because when the list contains an odd number of elements, 
+the middle one remains untouched)
+we've swapped the ith element (from the beginning of the list) with the one with an index equal to 
+(length - i - 1) (from the end of the list); in our example, for i equal to 0 the (lenght - i - 1) 
+gives 4; for i equal to 1, it gives 3 - this is exactly what we needed.
+'''
