@@ -22,3 +22,21 @@ while swapped:
             my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
 
 print(my_list)
+
+# The bubble sort - interactive version
+
+my_list = [8, 10, 6, 2, 4]
+my_list.sort()
+print(my_list)
+
+lst = [5, 3, 1, 2, 4]
+print(lst)
+
+lst.sort()
+print(lst)  # outputs: [1, 2, 3, 4, 5]
+
+lst = [5, 3, 1, 2, 4]
+print(lst)
+
+lst.reverse()
+print(lst)  # outputs: [4, 2, 1, 3, 5]
