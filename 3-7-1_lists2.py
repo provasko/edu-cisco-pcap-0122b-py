@@ -85,3 +85,54 @@ for room_number in range(20):
     if not rooms[2][14][room_number]:
         vacancy += 1
 
+
+# Key takeaways
+
+'''
+1. List comprehension allows you to create new lists from existing ones in a concise and elegant way. 
+The syntax of a list comprehension looks as follows:
+
+[expression for element in list if conditional]
+for element in list:
+    if conditional:
+        expression
+'''
+cubed = [num ** 3 for num in range(5)]
+print(cubed)  # outputs: [0, 1, 8, 27, 64]
+
+'''
+2. You can use nested lists in Python to create matrices (i.e., two-dimensional lists). For example:
+'''
+
+# A four-column/four-row table - a two dimensional array (4x4)
+
+table = [[":(", ":)", ":(", ":)"],
+         [":)", ":(", ":)", ":)"],
+         [":(", ":)", ":)", ":("],
+         [":)", ":)", ":)", ":("]]
+
+print(table)
+print(table[0][0])  # outputs: ':('
+print(table[0][3])  # outputs: ':)'
+
+'''
+3. You can nest as many lists in lists as you want, and therefore create n-dimensional lists, e.g., 
+three-, four- or even sixty-four-dimensional arrays. For example:
+'''
+# Cube - a three-dimensional array (3x3x3)
+
+cube = [[[':(', 'x', 'x'],
+         [':)', 'x', 'x'],
+         [':(', 'x', 'x']],
+
+        [[':)', 'x', 'x'],
+         [':(', 'x', 'x'],
+         [':)', 'x', 'x']],
+
+        [[':(', 'x', 'x'],
+         [':)', 'x', 'x'],
+         [':)', 'x', 'x']]]
+
+print(cube)
+print(cube[0][0][0])  # outputs: ':('
+print(cube[2][2][0])  # outputs: ':)'
