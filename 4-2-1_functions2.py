@@ -153,3 +153,15 @@ def subtra(a, b):
 subtra(5, b=2)    # outputs: 3
 subtra(5, 2)    # outputs: 3
 
+'''
+3. You can use the keyword argument passing technique to pre-define a value for a given argument:
+'''
+
+
+def name(first_name, last_name="Smith"):
+    print(first_name, last_name)
+
+
+name("Andy")    # outputs: Andy Smith
+# outputs: Betty Johnson (the keyword argument replaced by "Johnson")
+name("Betty", "Johnson")
