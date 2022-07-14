@@ -212,3 +212,13 @@ def fib(n):
 
 for n in range(1, 10):
     print(n, "->", fib(n))
+
+
+# Key takeaways
+
+'''
+1. A function can call other functions or even itself. When a function calls itself, this situation
+ is known as recursion, and the function which calls itself and contains a specified termination 
+ condition (i.e., the base case - a condition which doesn't tell the function to make any further 
+ calls to that function) is called a recursive function.
+'''
