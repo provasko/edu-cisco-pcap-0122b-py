@@ -222,3 +222,23 @@ for n in range(1, 10):
  condition (i.e., the base case - a condition which doesn't tell the function to make any further 
  calls to that function) is called a recursive function.
 '''
+
+'''
+2. You can use recursive functions in Python to write clean, elegant code, and divide it into smaller, 
+organized chunks. On the other hand, you need to be very careful as it might be easy to make a mistake 
+and create a function which never terminates. You also need to remember that recursive calls consume 
+a lot of memory, and therefore may sometimes be inefficient.
+'''
+
+# Recursive implementation of the factorial function.
+
+
+def factorial(n):
+    if n == 1:    # The base case (termination condition.)
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+
+print(factorial(4))  # 4 * 3 * 2 * 1 = 24
+
